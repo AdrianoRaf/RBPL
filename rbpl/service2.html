@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Organic Agriculture</title>
+
+    <!-- Font Awesome for icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Monoton&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="daspet.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <header class="header">
+      <div class="logo">AHLITANIAN.COM</div>
+      <nav class="nav">
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="dashboardpetani.html">Home</a>
+        <a href="aboutpetani.html">About</a>
+        <a href="service.html">Services</a>
+        <a href="projectpetani.html">Projects</a>
+        <a href="newspetani.html">News</a>
+        <a href="hasilkonsul.php">Konsultasi</a>
+      </nav>
+      <div class="contact-info">Call Anytime: +98 (000) - 9630</div>
+    </header>
+
+    <!-- Hero Section -->
+    <section
+      class="hero"
+      style="position: relative; text-align: center; color: white"
+    >
+      <img
+        src="newstrak.png"
+        alt="Tractor"
+        class="hero-image"
+        style="width: 100%; height: auto; display: block"
+      />
+      <div
+        style="
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: 10px;
+        "
+      >
+        <p style="font-size: 18px; margin: 0">Home / Service</p>
+        <h1 style="font-size: 48px; margin: 0">Service</h1>
+      </div>
+    </section>
+
+    <!-- Input Complaints Section -->
+    <section
+      class="news-section"
+      style="padding: 60px 20px; background-color: #fff"
+    >
+      <div class="container" style="max-width: 900px; margin: 0 auto">
+        <div style="text-align: center; margin-bottom: 30px">
+          <p style="color: #c89c00; font-weight: 500; margin: 0">
+            Input Complaints
+          </p>
+          <h2 style="font-size: 32px; font-weight: bold; margin-top: 10px">
+            Input Complaints
+          </h2>
+        </div>
+
+        <!-- FORM -->
+        <form
+          action="submit_complains.php"
+          method="POST"
+          enctype="multipart/form-data"
+        >
+          <div
+            style="
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              gap: 40px;
+            "
+          >
+            <!-- Deskripsi & Upload Gambar -->
+            <div style="display: flex; justify-content: center; gap: 40px">
+              <!-- Deskripsi -->
+              <div style="text-align: center">
+                <p style="color: #c89c00; margin-bottom: 8px">Description</p>
+                <textarea
+                  name="deskripsi"
+                  placeholder="Write your complaint..."
+                  rows="10"
+                  cols="30"
+                  style="
+                    background-color: #f5de9e;
+                    border: none;
+                    border-radius: 10px;
+                    padding: 15px;
+                    width: 300px;
+                    height: 300px;
+                  "
+                  required
+                ></textarea>
+              </div>
+
+              <!-- Upload Gambar -->
+              <div style="text-align: center">
+                <p style="color: #c89c00; margin-bottom: 8px">Foto</p>
+                <input
+                  type="file"
+                  name="foto"
+                  accept="image/*"
+                  style="
+                    display: block;
+                    width: 300px;
+                    height: 300px;
+                    background-color: #f5de9e;
+                    border: none;
+                    border-radius: 10px;
+                    padding: 15px;
+                  "
+                  required
+                />
+              </div>
+            </div>
+
+            <!-- Pilihan Pakar -->
+            <div style="text-align: center">
+              <p style="color: #c89c00; margin-bottom: 8px">
+                Select Expert (Pakar)
+              </p>
+              <select
+                name="id_pakar"
+                required
+                style="
+                  width: 300px;
+                  padding: 10px;
+                  border-radius: 8px;
+                  background-color: #f5de9e;
+                  border: none;
+                "
+              >
+                <option value="">-- Choose Expert --</option>
+                <option value="1">Pakar 1</option>
+                <option value="2">Pakar 2</option>
+                <option value="3">Pakar 3</option>
+              </select>
+            </div>
+
+            
+
+            <!-- Tombol Submit -->
+            <button
+  type="submit"
+  style="
+    margin-bottom: 20px;
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+  "
+>
+  Send Complaint
+</button>
+
+        </form>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-left">
+        <h3>AHLITANIAN.COM</h3>
+        <p>There are many variations of passages...</p>
+        <div class="socials">🔗</div>
+      </div>
+      <div class="footer-center">
+        <h4>Explore</h4>
+        <ul>
+          <li>About</li>
+          <li>Services</li>
+          <li>Our Projects</li>
+          <li>Meet the Farmers</li>
+          <li>Latest News</li>
+          <li>Contact</li>
+        </ul>
+      </div>
+      <div class="footer-news">
+        <h4>News</h4>
+        <p>
+          Bringing Food Production Back To Cities<br /><small
+            >July 5, 2022</small
+          >
+        </p>
+        <p>The Future of Farming...<br /><small>July 5, 2022</small></p>
+      </div>
+      <div class="footer-contact">
+        <h4>Contact</h4>
+        <p>📞 666 888 0000</p>
+        <p>📧 needhelp@company.com</p>
+        <p>📍 80 brooklyn golden street line, New York</p>
+        <input type="email" placeholder="Your Email Address" />
+      </div>
+    </footer>
+  </body>
+</html>

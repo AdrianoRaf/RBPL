@@ -1,0 +1,67 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Arial", sans-serif;
+}
+
+body {
+  background: url("loginn.png") no-repeat center center fixed;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.logo {
+  font-size: 3em;
+  color: white;
+  margin-bottom: 20px;
+  letter-spacing: 5px;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+  font-family: "Monoton", cursive;
+}
+
+.login-box {
+  background: rgba(217, 217, 217, 0.7);
+  width: 400px;
+  padding: 30px 40px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+.login-box h2 {
+  color: white;
+  margin-bottom: 20px;
+  font-family: "Merienda One", cursive;
+}
+
+.login-box input[type="text"],
+.login-box input[type="password"] {
+  color: black;
+  text-align: center;
+  width: 200px;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+}
+
+.login-box button {
+  padding: 10px 30px;
+  background-color: #3b45f5;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: 0.3s;
+}
+
+.login-box button:hover {
+  background-color: #1e2edb;
+}
